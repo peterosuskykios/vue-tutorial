@@ -17,9 +17,10 @@
 3.	Zmeň štýl elementu podľa hodnoty (napr. červený, ak je vek < 18)
 4.	computed: vytvor fullName z firstName a lastName
 5.	watch: sleduj zmenu mena a vypíš do konzoly
+6.  Typescript props a emity
  
-
 https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basic.vue
+
 
 ## 🧩 Modul 2: Vue Router
 ### 🎯 Cieľ:
