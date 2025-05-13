@@ -2,7 +2,7 @@
  
 ## 🧩 Modul 1: Základy Vue 3 + Composition API
 ### 🎯 Cieľ:
-•	Pochopiť reaktivitu, štruktúru komponentu a prácu s <script setup>.
+•	Pochopiť reaktivitu, štruktúru komponentu a prácu s **<script setup>**.
 
 ### ✅ Checklist:
 •	ref, reactive
@@ -19,7 +19,8 @@
 5.	watch: sleduj zmenu mena a vypíš do konzoly
 6.  Typescript props a emity
  
-https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basic.vue
+1-5 - [link](https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basic.vue)
+6   - [link](https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/02_Typescript.vue) 
 
 
 ## 🧩 Modul 2: Vue Router
