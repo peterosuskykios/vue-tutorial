@@ -5,11 +5,11 @@
 •	Pochopiť reaktivitu, štruktúru komponentu a prácu s **<script setup>**.
 
 ### ✅ Checklist:
-•	ref, reactive\
-•	computed\
-•	watch, watchEffect\
-•	\<template>\, \<script setup>\, \<style> \ 
-•	Props & emits s TypeScriptom
+•	ref, reactive  
+•	computed  
+•	watch, watchEffect  
+•	\<template>\, \<script setup>\, \<style>\  
+•	Props & emits s TypeScriptom  
 
 ### 🧪 Cvičenia:
 1.	Vytvor komponent, ktorý počíta kliky (ref)
