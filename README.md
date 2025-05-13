@@ -1,17 +1,17 @@
-✅ Vue 3 + TypeScript Študijný plán
+# ✅ Vue 3 + TypeScript Študijný plán
  
-🧩 Modul 1: Základy Vue 3 + Composition API
-🎯 Cieľ:
+## 🧩 Modul 1: Základy Vue 3 + Composition API
+### 🎯 Cieľ:
 •	Pochopiť reaktivitu, štruktúru komponentu a prácu s <script setup>.
 
-✅ Checklist:
+### ✅ Checklist:
 •	ref, reactive
 •	computed
 •	watch, watchEffect
 •	<template>, <script setup>, <style>
 •	Props & emits s TypeScriptom
 
-🧪 Cvičenia:
+### 🧪 Cvičenia:
 1.	Vytvor komponent, ktorý počíta kliky (ref)
 2.	Reaktívna forma s reactive objektom (meno, vek)
 3.	Zmeň štýl elementu podľa hodnoty (napr. červený, ak je vek < 18)
