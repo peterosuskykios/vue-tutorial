@@ -5,14 +5,10 @@
 •	Pochopiť reaktivitu, štruktúru komponentu a prácu s **<script setup>**.
 
 ### ✅ Checklist:
-•	ref, reactive
-
-•	computed
-
-•	watch, watchEffect
-
-•	\<template>\, \<script setup>\, \<style>\
-
+•	ref, reactive\
+•	computed\
+•	watch, watchEffect\
+•	\<template>\, \<script setup>\, \<style>\ \
 •	Props & emits s TypeScriptom
 
 ### 🧪 Cvičenia:
