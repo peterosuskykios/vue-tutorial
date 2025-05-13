@@ -34,7 +34,7 @@
 •	Navigácia cez router.push()
 ### 🧪 Cvičenia:
 1.	Nastav 3 stránky: Home, Users, About
-2.	Prejdi z menu cez <router-link>
+2.	Prejdi z menu cez **<router-link>**
 3.	Zobraz detail používateľa podľa ID (/user/123)
 4.	Pridaj NotFound stránku
  
