@@ -8,7 +8,7 @@
 •	ref, reactive\
 •	computed\
 •	watch, watchEffect\
-•	\<template>\, \<script setup>\, \<style>\ \
+•	\<template>\, \<script setup>\, \<style>\ 
 •	Props & emits s TypeScriptom
 
 ### 🧪 Cvičenia:
