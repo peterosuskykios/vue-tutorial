@@ -2,14 +2,14 @@
  
 ## 🧩 Modul 1: Základy Vue 3 + Composition API
 ### 🎯 Cieľ:
-•	Pochopiť reaktivitu, štruktúru komponentu a prácu s <script setup>.
+•	Pochopiť reaktivitu, štruktúru komponentu a prácu s **<script setup>**.
 
 ### ✅ Checklist:
-•	ref, reactive
-•	computed
-•	watch, watchEffect
-•	<template>, <script setup>, <style>
-•	Props & emits s TypeScriptom
+•	ref, reactive  
+•	computed  
+•	watch, watchEffect  
+•	\<template>\, \<script setup>\, \<style>  
+•	Props & emits s TypeScriptom  
 
 ### 🧪 Cvičenia:
 1.	Vytvor komponent, ktorý počíta kliky (ref)
@@ -17,9 +17,11 @@
 3.	Zmeň štýl elementu podľa hodnoty (napr. červený, ak je vek < 18)
 4.	computed: vytvor fullName z firstName a lastName
 5.	watch: sleduj zmenu mena a vypíš do konzoly
+6.  Typescript props a emity
  
+1-5 - [link](https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basic.vue)
+6   - [link](https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/02_Typescript.vue) 
 
-https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basic.vue
 
 ## 🧩 Modul 2: Vue Router
 ### 🎯 Cieľ:
@@ -32,7 +34,7 @@ https://github.com/peterosuskykios/vue-tutorial/blob/main/src/components/01_Basi
 •	Navigácia cez router.push()
 ### 🧪 Cvičenia:
 1.	Nastav 3 stránky: Home, Users, About
-2.	Prejdi z menu cez <router-link>
+2.	Prejdi z menu cez **<router-link>**
 3.	Zobraz detail používateľa podľa ID (/user/123)
 4.	Pridaj NotFound stránku
  
