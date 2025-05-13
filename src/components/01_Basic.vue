@@ -1,10 +1,13 @@
 <script setup>
 import { ref, reactive, computed, watch } from 'vue'
 
-// Ref() pouzivam ak chcem reaktivnu 1 premennu 
+// Ref() pouzivam ak chcem reaktivnu 1 premennu - String, Number, Bool
+// Hodnotu ziskame pomocou .value 
+// V <template> sa .value nepouziva!
 const count = ref(0)
 
-// Reactive() pouzivam ak chcem reaktivne pole alebo viac objektov naraz
+// Reactive() pouzivam ak chcem reaktivny objekt, pole, Map alebo Set
+// Pouzivame priamo, nema .value
 const form = reactive({
   firstName: '',
   lastName: '',
@@ -19,15 +22,15 @@ watch (fullName, (newVal, oldVal) => {
     console.log(`Meno sa zmenilo z ${oldVal} na ${newVal}`)
 })
 
-
-
+const awesome = ref(true)
 </script>
+
 
 <template>
     <h1>Basic template</h1>
 
     <!-- Ref() pouzivam ak chcem reaktivnu 1 premennu -->
-    <button @click="count++">Klikol si: {{ count }}x</button>
+    <button @click="count++">Klikol si: {{ count }}</button>
 
     <!-- Reactive() pouzivam ak chcem reaktivne pole alebo viac objektov naraz -->
     <input v-model="form.firstName" placeholder="Meno" />
@@ -40,12 +43,14 @@ watch (fullName, (newVal, oldVal) => {
         {{ form.age < 18 ? 'Neplnoletý' : 'Dospelý' }}
     </p>
 
+    <button @click="awesome = !awesome">Toggle</button>
 
+    <h1 v-if="awesome">Vue is awesome!</h1>
+    <h1 v-else>Oh no 😢</h1>
 </template>
 
 
 <style>
-
 p,
 h1 {
     color: black;
