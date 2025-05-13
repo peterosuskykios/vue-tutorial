@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, computed, watch } from 'vue'
+import { ref, reactive, computed, watch, watchEffect } from 'vue'
 
 // Ref() pouzivam ak chcem reaktivnu 1 premennu - String, Number, Bool
 // Hodnotu ziskame pomocou .value 
@@ -22,12 +22,33 @@ watch (fullName, (newVal, oldVal) => {
     console.log(`Meno sa zmenilo z ${oldVal} na ${newVal}`)
 })
 
+// watchEffetct - sleduje automaticky premennu ktoru pouziva
+watchEffect(() => {
+    console.log(`Aktualny count je: ${count.value}`)
+})
+
+// ELSE IF statement
 const awesome = ref(true)
+
+// Props su properties, ktore predava rodic potomkovi/komponentu
+const props = defineProps(['name', 'lastname', 'id'])
+
+// Emits su akcie, ktore predava potomok rodicovi
+const emit = defineEmits(['logout'])
+
+// Spustenie emitu
+function handleLogout() {
+    emit('logout')
+}
 </script>
 
 
 <template>
-    <h1>Basic template</h1>
+    <!-- PROPS cez TS -->
+    <h1>Vitaj {{ props.name }} {{ props.lastname }}, tvoje ID je: {{ props.id }}</h1>
+
+
+    <!-- <h2>skuska props {{ props.name }}</h2> -->
 
     <!-- Ref() pouzivam ak chcem reaktivnu 1 premennu -->
     <button @click="count++">Klikol si: {{ count }}</button>
@@ -43,10 +64,15 @@ const awesome = ref(true)
         {{ form.age < 18 ? 'Neplnoletý' : 'Dospelý' }}
     </p>
 
-    <button @click="awesome = !awesome">Toggle</button>
+    <!-- IF ELSE statement -->
+    <button @click="awesome = !awesome">Aky je tvoj nazor na VUE?</button>
 
-    <h1 v-if="awesome">Vue is awesome!</h1>
-    <h1 v-else>Oh no 😢</h1>
+    <h1 v-if="awesome">Vue je uzasne!</h1>
+    <h1 v-else>Tazkeeee 😢</h1>
+
+    <!-- EMITS -->
+    <button @click="handleLogout">Odhlasit</button>
+
 </template>
 
 
