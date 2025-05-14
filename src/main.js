@@ -5,9 +5,9 @@ import App from './App.vue'
 
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import BasicView from './components/Home/Basic.vue'
-import TypeScriptView from './components/Home/Typescript.vue'
-import AboutView from './components/About/About.vue'
+import BasicView from './components/Basic/Basic.vue'
+import TypeScriptView from './components/Basic/Typescript.vue'
+import AboutView from './components/Router/About.vue'
 
 const routes = [
     {

@@ -6,7 +6,7 @@ const lastName  = ref("Osus")
 const id        = ref(1)
 
 
-// emit handler
+// emit logout handler
 function handleLogout() {
   alert('Pouzivatel odhlaseny')
   name.value = "neprihlaseny"
@@ -14,6 +14,7 @@ function handleLogout() {
   id.value = 0
 }
 
+// emit test ts handler
 function handleTsEmit() {
   alert('Skuska emitu cez TS')
 }
@@ -28,7 +29,8 @@ function handleTsEmit() {
       <router-link to="/about">About</router-link>
     </nav>
 
-    <router-view @logout="handleLogout" @tsemit="handleTsEmit" />
+    <router-view @logout="handleLogout" @tsemit="handleTsEmit" 
+    />
   </div>
 </template>
 

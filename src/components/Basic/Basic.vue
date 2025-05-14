@@ -48,9 +48,6 @@ function handleLogout() {
     <!-- PROPS cez TS -->
     <h1>Vitaj {{ props.name }} {{ props.lastname }}, tvoje ID je: {{ props.id }}</h1>
 
-
-    <!-- <h2>skuska props {{ props.name }}</h2> -->
-
     <!-- Ref() pouzivam ak chcem reaktivnu 1 premennu -->
     <button @click="count++">Klikol si: {{ count }}</button>
 
