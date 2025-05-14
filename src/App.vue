@@ -30,15 +30,6 @@ function handleTsEmit() {
       <router-view @logout="handleLogout" @tsemit="handleTsEmit" />
     </nav>
   </div>
-
-  <!-- Predavanie PROPS a EMITS             -->
-  <!-- P: Text            - nemusim davat : -->
-  <!-- P: Hodnota/value   - musim davat :   -->
-  <!-- E: pouzi @ a funkciu                 -->
-  <!-- <div class="container"> -->
-  <!-- <Basic :name="name" :lastname="lastName" :id="id" @logout="handleLogout"></Basic>
-  <TypeScript first="first" second="second" :id=1 @tsemit="handleTsEmit"></TypeScript> -->
-  <!-- </div> -->
 </template>
 
 <style scoped>
