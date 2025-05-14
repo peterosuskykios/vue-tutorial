@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import Basic from './components/01_Basic.vue'
-import TypeScript from './components/02_Typescript.vue'
 
 const name      = ref("Peter")
 const lastName  = ref("Osus")
@@ -24,14 +22,23 @@ function handleTsEmit() {
 
 <template>
   <div class="container">
+    <nav>
+      <router-link to="/">Basics</router-link>
+      <router-link to="/ts">Typescript</router-link>
+      <router-link to="/about">About</router-link>
 
-    <!-- Predavanie PROPS a EMITS             -->
-    <!-- P: Text            - nemusim davat : -->
-    <!-- P: Hodnota/value   - musim davat :   -->
-    <!-- E: pouzi @ a funkciu                 -->
-    <Basic :name="name" :lastname="lastName" :id="id" @logout="handleLogout"></Basic>
-    <TypeScript first="first" second="second" :id=1 @tsemit="handleTsEmit"></TypeScript>
+      <router-view @logout="handleLogout" @tsemit="handleTsEmit" />
+    </nav>
   </div>
+
+  <!-- Predavanie PROPS a EMITS             -->
+  <!-- P: Text            - nemusim davat : -->
+  <!-- P: Hodnota/value   - musim davat :   -->
+  <!-- E: pouzi @ a funkciu                 -->
+  <!-- <div class="container"> -->
+  <!-- <Basic :name="name" :lastname="lastName" :id="id" @logout="handleLogout"></Basic>
+  <TypeScript first="first" second="second" :id=1 @tsemit="handleTsEmit"></TypeScript> -->
+  <!-- </div> -->
 </template>
 
 <style scoped>
