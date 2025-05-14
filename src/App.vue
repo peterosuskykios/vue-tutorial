@@ -28,7 +28,7 @@ function handleTsEmit() {
     <!-- Predavanie PROPS a EMITS             -->
     <!-- P: Text            - nemusim davat : -->
     <!-- P: Hodnota/value   - musim davat :   -->
-    <!-- E: pouzi @ a funkciu                 -->
+    <!-- E: pouzi @ a funkciu                 --> 
     <Basic :name="name" :lastname="lastName" :id="id" @logout="handleLogout"></Basic>
     <TypeScript first="first" second="second" :id=1 @tsemit="handleTsEmit"></TypeScript>
   </div>
