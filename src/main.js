@@ -14,17 +14,21 @@ const routes = [
         path: '/',
         name: 'Home',
         component: BasicView,
-        props: route => ({
-        name: 'Peter',
-        lastname: 'Osus',
-        id: 1
-        })
+        props: {
+            name: 'Peter',
+            lastname: 'Osus',
+            id: 1
+        }
     },
     {
         path: '/ts',
         name: 'TypeScript',
         component: TypeScriptView,
-        props: { first: 'first', second: 'second', id: 1 }
+        props: { 
+            first: 'first', 
+            second: 'second', 
+            id: 1 
+        }
     },  
     {
         path: '/about',

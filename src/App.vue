@@ -22,17 +22,17 @@ function handleTsEmit() {
 
 <template>
   <div class="container">
-    <nav>
+    <nav class="nav">
       <router-link to="/">Basics</router-link>
       <router-link to="/ts">Typescript</router-link>
       <router-link to="/about">About</router-link>
-
-      <router-view @logout="handleLogout" @tsemit="handleTsEmit" />
     </nav>
+
+    <router-view @logout="handleLogout" @tsemit="handleTsEmit" />
   </div>
 </template>
 
-<style scoped>
+<style>
 .container {
   background-color: white;
   padding: 2rem;
@@ -42,5 +42,22 @@ function handleTsEmit() {
   flex-direction: column;
   gap: 1rem;
 }
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
 
+.nav a {
+  padding: 0.5rem 1rem;
+  background-color: #42b983;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #369f6b;
+}
 </style>

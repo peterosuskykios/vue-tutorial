@@ -44,6 +44,7 @@ function handleLogout() {
 
 
 <template>
+  <div class="container">
     <!-- PROPS cez TS -->
     <h1>Vitaj {{ props.name }} {{ props.lastname }}, tvoje ID je: {{ props.id }}</h1>
 
@@ -72,7 +73,7 @@ function handleLogout() {
 
     <!-- EMITS -->
     <button @click="handleLogout">Odhlasit</button>
-
+  </div>
 </template>
 
 
@@ -95,5 +96,15 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 </style>
